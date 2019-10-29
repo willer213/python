@@ -1,0 +1,31 @@
+"""
+print three designs in terms of inphone case, robot pendent and dodecahedron 
+Please list the printing model 
+delete the model from the disign list after finished and,
+add the finishde model in the completed list 
+define functions to satisfied the mentioned requirments. 
+"""
+
+def unprinted_design(agr1,agr2):  #define a function which can display the printing model 
+                                  # and deleted it from the design list"""
+	 # agr1 is a list including unprinted model 
+	 # agr2 is  an empty list  used for including printed model 
+	while agr1:
+		current_printing = agr1.pop() # pop the printing model from the unprinted list and display it 
+		print('The current printing model is:' + current_printing) 
+		agr2.append(current_printing) # store the printed model in printed list  
+
+
+# define another function to display  the printed model 
+
+def printed_model(agr1,agr2): 
+	for printed_model in agr2:
+		print("The completed model are following:") 
+		print(printed_model.title())
+
+# the function have been created， Please enjoy it 
+
+arg1= ['iphone case', 'robot pendent', 'dodecahedron'] 
+arg2 = []
+unprinted_design(arg1,arg2) 
+printed_model(arg1,arg2)
