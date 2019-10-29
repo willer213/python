@@ -1,0 +1,27 @@
+"""
+print three designs in terms of inphone case, robot pendent and dodecahedron 
+Please list the printing model 
+delete the model from the disign list after finished and,
+add the finishde model in the completed list 
+"""
+design_list = ['iphone case', 'robot pendent', 'dodecahedron'] 
+completed_list = [] 
+
+while design_list: 
+    current_printing = design_list.pop() # display the printing model and delete it from the design list
+    print("The current printing model is: " + current_printing ) 
+    completed_list.append(current_printing) # add the printed model into the completed list 
+
+
+
+#display the completed model
+print("The completed model are:") 
+for completed_model in completed_list: 
+
+    print(completed_model.title())
+
+
+
+
+
+
